@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap_3-2-0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen"> <!-- подключ.основной css-файл Bootstrapа--> 
+	<link href="css/font-awesome.css" rel="stylesheet"> <!-- подключ.css-файл font-awesome со шрифт.иконками--> 
+  </head>
+<body>
+   
+<div class='container-fluid'>
+	<header>
+		 <h1>ЗАГОЛОВОК в тєге header</h1>
+	</header>
+<!----------------------------------------------------------------------------------------------------------------------------------------------->	
+<div class='navbar navbar-default'>   <!-- Гориз.НавБар- НАЧАЛО--> <!--navbar-inverse-->
+
+    <div class='navbar-header'>     <!--Нeader Нав.Бара НАЧАЛО/ можно его вообще убрать-->
+		<a class='navbar-brand' href='#'>LOGO</a>
+		<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#responsive-menu'> <!--ID c diva(nav)-->
+            <span class='sr-only'>Открыть навинацию</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+        </button>
+	</div>                        <!--Нeader Нав.Бара КОНЕЦ -->
+	
+	<nav class='navbar-collapse collapse' id='responsive-menu'> 	
+		<ul id="myTab" class="nav nav-tabs" >
+			<li class="active"><a href="#home" role="tab" data-toggle="tab"><em class='glyphicon glyphicon-home'></em>&nbspHome</a></li>
+			<li><a href="#profile" role="tab" data-toggle="tab"><em class='glyphicon glyphicon-user'></em>&nbspProfile</a></li>
+			<li><a href="#market" role="tab" data-toggle="tab"><em class='glyphicon glyphicon-shopping-cart'></em>&nbspMarket</a></li>
+			<li><a href="#aboutus" role="tab" data-toggle="tab"><em class='glyphicon glyphicon-folder-open'></em> &nbspAbout Us</a></li>
+			<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" id='dropdown_link'>Dropdown <em class="caret"></em></a>
+				
+				<ul class="dropdown-menu">     <!--Выпад.МЕНЮ 1 Ур.НАЧАЛО-->
+					<li><a href="#dropdown1">dropdown 1</a></li>
+					<li><a href="#dropdown2">dropdown 2</a></li>
+					<li class='divider'></li> <!-- визуальный разделитель -->
+					<li class='dropdown-submenu'><a href="#">dropdown 3</a>
+						<ul class='dropdown-menu'>   <!--Выпад.МЕНЮ 2 Ур.НАЧАЛО-->
+							<li><a href="#subdropdown_1">SUBdropdown 1</a></li>
+							<li><a href="#subdropdown_2">SUBdropdown 2</a></li>
+							<li><a href="#subdropdown_3">SUBdropdown 3</a></li>
+							<li><a href="#subdropdown_4">SUBdropdown 4</a></li>
+						</ul>                         <!--Выпад.МЕНЮ 2 Ур.КОНЕЦ-->
+					</li>
+				</ul>                           <!--Выпад.МЕНЮ 1 Ур.КОНЕЦ-->
+			</li> 							
+
+			<form class='navbar-form pull-right'>  <!-- Форма поискового запроса в гориз.Панели Нав.Бара- НАЧАЛО-->
+				<input type='text' class='col-sm-5 form-control' placeholder='Введите запрос'> &nbsp 
+				<button type='submit' class='btn btn-primary'><em class='glyphicon glyphicon-search'></em>&raquo;ПОИСК </button><!-- btn-primary-кнопка будет в сине-белом фоне и,тогда убрать класс btn-default -->
+			</form>                                <!-- Форма поискового запроса в гориз.Панели Нав.Бара- КОНЕЦ-->
+			
+		</ul>
+	</nav> 	
+</div>	                            <!-- Гориз.НавБар- КОНЕЦ-->
+<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+
+	<div  id='myCarousel' class='carousel slide' >   <!-- Cлайдер CAROUSEL- НАЧАЛО-->	
+		
+		<ol class='carousel-indicators'> <!-- Нумер.список-индикатор Cлайдов- НАЧАЛО--> 
+			<li  class='active' data-target="#myCarousel" data-slide-to="0"></li>
+			<li                 data-target="#myCarousel" data-slide-to="1"></li>
+			<li                 data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>                           <!-- Нумер.список-индикатор Cлайдов- КОНЕЦ-->
+		
+		<div class='carousel-inner'>    <!-- Контейнер содер.все слайды- НАЧАЛО-->
+		
+			<div class='item active'><img  src='my_img/1.png' alt=''> <!-- div со Слайдом №1-->
+				<div class='carousel-caption'>  <!--div для описания данного слайда-->
+				<h3>Заголовок слайда №1</h3> <p>Содержание описания слайда №1</p>
+				</div>
+			</div>
+
+			<div class='item'><img   src='my_img/2.png' alt=''> <!-- div со Слайдом №2-->
+				<div class='carousel-caption'>  <!--div для описания данного слайда-->
+				<h3>Заголовок слайда №2</h3> <p>Содержание описания слайда №2</p>
+				</div>
+			</div>  
+
+			<div class='item'><img  src='my_img/3.png' alt=''> <!-- div со Слайдом №3-->
+				<div class='carousel-caption'>  <!--div для описания данного слайда-->
+				<h3>Заголовок слайда №3</h3> <p>Содержание описания слайда №3</p>
+				</div>
+			</div>  			
+			 
+		</div>   <!-- Контейнер содер.все слайды- КОНЕЦ-->
+		
+		<a class='carousel-control left' data-slide="prev" href="#myCarousel"><em class='glyphicon glyphicon-chevron-left'></em></a>  <!-- Cтрелка переключ.Слайдов-->
+		<a class='carousel-control right ' data-slide="next" href="#myCarousel"><em class='glyphicon glyphicon-chevron-right'></em></a>  <!-- Cтрелка переключ.Слайдов-->
+		
+	</div>  <!-- Cлaйдер CAROUSEL- КОНЕЦ-->
+	<br>
+<!------------------------------------------------------------------------------------------------------------------------------------------>		
+	<div class='row'> <!-- -->
+	
+		<div class='col-xs-4'>
+			 <p class='text-muted'> Ваш комментарий" на <abbr class='initialism' title='google ruls'>Google Chrome</abbr> галочку не как не поставить он кнопку(checkbox) не видит, пришлось с другого браузера комментарий писать. галочку не как не поставить он кнопку(checkbox) не видит, пришлось с другого браузера комментарий писать <a href="http://i.ua" title='E-Mail I.UA'>E-mail I.UA &raquo;</a>.
+			 </p>
+		</div>	
+		
+		<div class='col-xs-4 delete_border'>
+			<div class='col-xs-12'>
+			<p> Ваш комментарий" на Google Chrome галочку <a href='#'><em class='glyphicon glyphicon-heart' style='font-size:56px;' ></em></a> не как не поставить он кнопку(checkbox) не видит, пришлось с другого браузера комментарий писать.
+			</p>
+			<p> <code>Выделен в строке. Выделен в строке.</code>
+			</p>
+			<i class="fa fa-key fa-lg"></i> <i class="fa fa-camera-retro" style="font-size:30px; color:red;"> </i>  <i class="fa fa-cog fa-4x fa-spin"></i>
+
+			</div>
+		</div>
+		
+		<div class='col-xs-4'>
+			<p> Тем не менее, в некоторых ситуациях может быть желанным отключения этой функции . Таким образом, мы также предоставляем возможность отключить API-атрибуты, через отвязке всех событий в пространстве имен (namespaced) документа, при помощи Ваш комментарий" на галочку не как не поставить он кнопку(checkbox) не видит, пришлось с другого браузера комментарий писать. галочку не как не поставить он кнопку(checkbox) не видит, пришлось с другого браузера комментарий писать </a>.<br>
+
+<span class="fa-stack fa-4x">
+  <i class="fa fa-camera fa-stack-1x"></i>
+  <i class="fa fa-ban fa-stack-2x text-danger"></i>
+</span>
+	
+
+
+			</p>
+		</div>	
+
+	</div>
+&nbsp 
+
+
+	<!-- Для тестов, разбивка на коллоны НАЧАЛО-->
+			<div class='row'>
+				
+				<div class='col-sm-2'> <p>col-sm-2</p>Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi. 
+				</div>
+				
+				
+				<div class='col-sm-7 delete_border'>
+					<div class='col-sm-12'> <p>col-sm-7</p>Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi. Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi. tica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi. 
+					</div>
+				</div>  
+				
+				
+				<div class='col-sm-3 '> <p>col-sm-3</p>Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi. Здесь произвольный текст. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate qui nisi.
+
+				</div>
+			</div>
+	<!-- Для тестов, разбивка на коллоны КОНЕЦ-->
+
+</div>
+
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> это онлайновая библиотека jQuery,она будет работать и выполнять 
+	             скрипты только при подключ.INTERNET. Чтобы добавить и подкл.эту библ.jQuery,нужно скопировать эту ссылку,и загрузить в адрес.строке браузера,
+				 затем весь текст, что появится(это и есть сама библиотека) сохранить(сохранить как прав.клав.на нем) как /jquery.min.js/-файл в папке /js/
+				 и потом тут(важно именно тут и выше строки:<script src="js/bootstrap.min.js" type="text/javascript"></script>) подключить эту библиотеку,
+				 прописав строку: <script src="js/jquery.min.js" type="text/javascript"></script> -->
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script> <!-- Include lib.jQuery из он-лайновой ссылки-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js" type="text/javascript"></script> <!-- Include lib.Javascript из исходника Бутстрап-->
+
+	
+  </body>
+
+</html>
